@@ -6,6 +6,9 @@ import NavbarMain from './components/NavbarMain';
 import Hero from './components/Hero';
 import PricingComponent from './components/PricingComponent';
 import OurFocus from './components/OurFocus';
+import Offerings from './components/Offerings';
+import OfferingMain from './components/OfferingMain';
+import Trainings from './components/Trainings';
 
 function App() {
   
@@ -18,6 +21,9 @@ function App() {
       <Hero/>
       <PricingComponent/>
       <OurFocus/>
+      <Offerings/>
+      <OfferingMain/>
+      <Trainings/>
 
       {/* Add the rest of your content here */}
     </ChakraProvider>

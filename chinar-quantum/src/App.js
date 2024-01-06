@@ -9,6 +9,9 @@ import OurFocus from './components/OurFocus';
 import Offerings from './components/Offerings';
 import OfferingMain from './components/OfferingMain';
 import Trainings from './components/Trainings';
+import TrainingsMain from './components/TrainingsMain';
+
+import Tem from './components/Tem';
 
 function App() {
   
@@ -24,6 +27,9 @@ function App() {
       <Offerings/>
       <OfferingMain/>
       <Trainings/>
+      <TrainingsMain/>
+      {/* <Tem/> */}
+
 
       {/* Add the rest of your content here */}
     </ChakraProvider>

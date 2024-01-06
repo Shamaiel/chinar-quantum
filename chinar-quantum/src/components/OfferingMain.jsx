@@ -6,16 +6,14 @@ const OfferingMain = () => {
   
     return (
         <Grid
-        templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
-        mt="30"
-
-        ml={{ base: "0", md: "120" }}
-        mr={{ base: "0", md: "120" }}
-        gap={4}
-        mb={100}
-      
-        
-      >
+          templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
+          mt="30"
+          ml={{ base: "0", md: "120" }}
+          mr={{ base: "0", md: "120" }}
+          gap={4}
+          mb={100} 
+        >
+          
         {/* Grid Item 1 */}
         <GridItem   mb={15}>
           <Flex border="2px" borderColor="grey">

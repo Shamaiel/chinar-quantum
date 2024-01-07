@@ -8,7 +8,7 @@ import {
   CSSReset,
   Text,
   Collapse,
-  styled
+  styled,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
@@ -29,7 +29,6 @@ const NavbarMain = () => {
     setisOpenMenu(!isOpenMenu);
   };
 
-
   return (
     <ChakraProvider theme={theme}>
       <Flex
@@ -42,29 +41,30 @@ const NavbarMain = () => {
         color="white"
       >
         <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
-          {isOpenMenu ? <CloseIcon /> : <HamburgerIcon boxSize={7}/>}
+          {isOpenMenu ? <CloseIcon /> : <HamburgerIcon boxSize={7} />}
         </Box>
 
         <Flex
           display={{ base: "none", md: "flex" }}
-          width={{ base: "full", md: "auto" }}
+          width={{ base: "full", md: "auto", lg:"50%" }}
           alignItems="center"
           flexGrow={1}
           justifyContent="space-around"
+         
         >
-          <Link href="#" p={2}>
+          <Link href="#" textDecoration="none" _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }} p={2}>
             Home
           </Link>
-          <Link href="#" p={1}>
+          <Link href="#" p={1}  _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }}>
             All Trainings
           </Link>
-          <Link href="#" p={2}>
+          <Link href="#" p={2}  _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }}>
             About Us
           </Link>
-          <Link href="#" p={2}>
+          <Link href="#" p={2}  _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }}>
             Our Team
           </Link>
-          <Link href="#" p={2}>
+          <Link href="#" p={2}  _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }}>
             Contact Us
           </Link>
         </Flex>
@@ -73,7 +73,7 @@ const NavbarMain = () => {
 
         <Collapse in={isOpenMenu} animateOpacity>
           <Flex
-            display={{  md: "none" }}
+            display={{ md: "none" }}
             flexDirection="column"
             // width="70%"
             // height="80%"
@@ -97,19 +97,9 @@ const NavbarMain = () => {
             </Link>
           </Flex>
         </Collapse>
-
       </Flex>
     </ChakraProvider>
   );
-}
-
+};
 
 export default NavbarMain;
-
-
-
-
-
-
-
-

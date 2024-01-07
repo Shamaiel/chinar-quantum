@@ -18,6 +18,7 @@ import GalleryHeading from './components/GalleryHeading';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import HeroM from './components/HeroM';
+import Nav from './components/Nav';
 
 function App() {
   
@@ -41,6 +42,7 @@ function App() {
       <GalleryHeading/>
       <Gallery/>
       <Footer/>
+      {/* <Nav/> */}
     
       
     </ChakraProvider>

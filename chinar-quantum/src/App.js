@@ -15,6 +15,8 @@ import Tem from './components/Tem';
 import Trainers from './components/Trainers';
 import TrainersHeadng from './components/TrainersHeadng';
 import GalleryHeading from './components/GalleryHeading';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -35,10 +37,9 @@ function App() {
       <TrainersHeadng/>
       <Trainers/>
       <GalleryHeading/>
+      <Gallery/>
+      <Footer/>
       
-
-
-      {/* Add the rest of your content here */}
     </ChakraProvider>
     </div>
   );

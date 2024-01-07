@@ -1,3 +1,105 @@
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+function Trainers() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 3000,
+    responsive: [
+        {
+          breakpoint: 1024, // medium screens
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 600, // small screens
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+  };
+
+  return (
+    <div className="w-3/4 m-auto">
+      <div className="mt-20">
+        <Slider {...settings}>
+          {data.map((d) => (
+            <div key={d.name} className="bg-white  text-black">
+              <div className="h-56 bg-indigo-500 flex justify-center items-center ">
+                <img src={d.img} alt="" className="h-100 w-100" />
+              </div>
+
+              <div className="flex flex-col  border-b border-green-400 mt-7 bg-gray-100 items-center justify-center gap-4 p-4">
+                <p className="text-xl text-green-500 font-semibold">{d.name}</p>
+                <p className="text-center">{d.review}</p>
+                <button className="bg-indigo-500 text-white font-bold text-lg px-6 py-1 rounded-xl">
+                {/* <img className="w-5 h-5 mr-2" src="." /> */}
+                  in
+                </button>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div>
+  );
+}
+
+const data = [
+  {
+    name: `Ifrah Sahkeel`,
+    img: `https://chinarquantumai.org/images/photos/ifra.webp`,
+    review: `Data science intern`,
+    linkidin_url: `https://www.linkedin.com/in/ifrah-shiekh-5447ab274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
+  },
+  {
+    name: `Dr Rukshan ul Haq`,
+    img: `https://chinarquantumai.org/images/photos/12.webp`,
+    review: `Founder Kims`,
+    linkidin_url: `https://www.linkedin.com/in/rukhsan-ul-haq-ph-d-1163503b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
+  },
+  {
+    name: `Junaid Akhtar`,
+    img: `https://chinarquantumai.org/images/photos/junaid.webp`,
+    review: `CTO-CQAI`,
+    linkidin_url: `https://www.linkedin.com/in/junaid-akhter-bbaa371b8/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
+  },
+  {
+    name: `Neelam Firdous`,
+    img: `https://chinarquantumai.org/images/photos/neelam.webp`,
+    review: `Head Operations`,
+    linkidin_url: `https://www.linkedin.com/in/neelam-firdous-k-881952a0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
+  },
+  {
+    name: `Moeen ul Haq`,
+    img: `https://chinarquantumai.org/images/photos/moeen.webp`,
+    review: `Data science  intern`,
+    linkidin_url: `https://www.linkedin.com/in/moeenulislam/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
+  },
+  {
+    name: `Humayun Ashraf`,
+    img: `https://chinarquantumai.org/images/photos/humayun.webp`,
+    review: `Data science  intern`,
+    linkidin_url: `https://www.linkedin.com/in/humayun-ashraf-bb71b11a0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
+  },
+];
+
+export default Trainers;
+
+
+
+
 // import { Stack , Button, ButtonGroup, Text, Image} from '@chakra-ui/react'
 // import React from 'react'
 // import {  useBreakpointValue } from '@chakra-ui/react';
@@ -193,101 +295,3 @@
 // };
 
 // export default Trainers;
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-function Trainers() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 3000,
-    responsive: [
-        {
-          breakpoint: 1024, // medium screens
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 600, // small screens
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
-  };
-
-  return (
-    <div className="w-3/4 m-auto">
-      <div className="mt-20">
-        <Slider {...settings}>
-          {data.map((d) => (
-            <div key={d.name} className="bg-white  text-black">
-              <div className="h-56 bg-indigo-500 flex justify-center items-center ">
-                <img src={d.img} alt="" className="h-100 w-100" />
-              </div>
-
-              <div className="flex flex-col  border-b border-green-400 mt-7 bg-gray-100 items-center justify-center gap-4 p-4">
-                <p className="text-xl text-green-500 font-semibold">{d.name}</p>
-                <p className="text-center">{d.review}</p>
-                <button className="bg-indigo-500 text-white font-bold text-lg px-6 py-1 rounded-xl">
-                {/* <img className="w-5 h-5 mr-2" src="." /> */}
-                  in
-                </button>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
-  );
-}
-
-const data = [
-  {
-    name: `Ifrah Sahkeel`,
-    img: `https://chinarquantumai.org/images/photos/ifra.webp`,
-    review: `Data science intern`,
-    linkidin_url: `https://www.linkedin.com/in/ifrah-shiekh-5447ab274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
-  },
-  {
-    name: `Dr Rukshan ul Haq`,
-    img: `https://chinarquantumai.org/images/photos/12.webp`,
-    review: `Founder Kims`,
-    linkidin_url: `https://www.linkedin.com/in/rukhsan-ul-haq-ph-d-1163503b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
-  },
-  {
-    name: `Junaid Akhtar`,
-    img: `https://chinarquantumai.org/images/photos/junaid.webp`,
-    review: `CTO-CQAI`,
-    linkidin_url: `https://www.linkedin.com/in/junaid-akhter-bbaa371b8/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
-  },
-  {
-    name: `Neelam Firdous`,
-    img: `https://chinarquantumai.org/images/photos/neelam.webp`,
-    review: `Head Operations`,
-    linkidin_url: `https://www.linkedin.com/in/neelam-firdous-k-881952a0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
-  },
-  {
-    name: `Moeen ul Haq`,
-    img: `https://chinarquantumai.org/images/photos/moeen.webp`,
-    review: `Data science  intern`,
-    linkidin_url: `https://www.linkedin.com/in/moeenulislam/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
-  },
-  {
-    name: `Humayun Ashraf`,
-    img: `https://chinarquantumai.org/images/photos/humayun.webp`,
-    review: `Data science  intern`,
-    linkidin_url: `https://www.linkedin.com/in/humayun-ashraf-bb71b11a0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
-  },
-];
-
-export default Trainers;

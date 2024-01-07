@@ -17,6 +17,7 @@ import TrainersHeadng from './components/TrainersHeadng';
 import GalleryHeading from './components/GalleryHeading';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import HeroM from './components/HeroM';
 
 function App() {
   
@@ -26,7 +27,8 @@ function App() {
      <ChakraProvider>
       <Navbar />
       <NavbarMain/>
-      <Hero/>
+      {/* <Hero/> */}
+      <HeroM/>
       <PricingComponent/>
       <OurFocus/>
       <Offerings/>
@@ -39,6 +41,7 @@ function App() {
       <GalleryHeading/>
       <Gallery/>
       <Footer/>
+    
       
     </ChakraProvider>
     </div>

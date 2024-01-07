@@ -55,9 +55,9 @@ const Card = ({ data }) => {
     const cardWidth = useBreakpointValue({ base: '100%', md: '19%' });
   
     return (
-      <Stack bg="gray.100" w={cardWidth}>
-        <Image src={data.image} alt={data.alt} w="100%" />
+      <Stack mb="80px" bg="gray.100" w={cardWidth}>
         
+        <Image src={data.image} alt={data.alt} w="100%" />
         <Stack  ml="4" mr="4" mt="6" spacing="3">
           <Text textAlign="left" fontSize="24px">
             {data.title}
@@ -65,8 +65,8 @@ const Card = ({ data }) => {
           <Text textAlign="left" color="grey.500">
             {data.description}
           </Text>
-          <ButtonGroup mt="5" spacing="2">
-            <Button textAlign="center" variant="solid" colorScheme="blue">
+          <ButtonGroup  mt="5" spacing="1">
+            <Button  textAlign="center" variant="solid" colorScheme="blue">
               {data.btnText}
             </Button>
           </ButtonGroup>

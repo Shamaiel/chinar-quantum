@@ -12,6 +12,9 @@ import Trainings from './components/Trainings';
 import TrainingsMain from './components/TrainingsMain';
 
 import Tem from './components/Tem';
+import Trainers from './components/Trainers';
+import TrainersHeadng from './components/TrainersHeadng';
+import GalleryHeading from './components/GalleryHeading';
 
 function App() {
   
@@ -28,7 +31,11 @@ function App() {
       <OfferingMain/>
       <Trainings/>
       <TrainingsMain/>
-      {/* <Tem/> */}
+    
+      <TrainersHeadng/>
+      <Trainers/>
+      <GalleryHeading/>
+      
 
 
       {/* Add the rest of your content here */}

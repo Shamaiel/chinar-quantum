@@ -12,65 +12,66 @@ const OfferingMain = () => {
           mr={{ base: "0", md: "120" }}
           gap={4}
           mb={100} 
+          
         >
           
         {/* Grid Item 1 */}
-        <GridItem   mb={15}>
-          <Flex border="2px" borderColor="grey">
+        <GridItem  mb={15} >
+          <Flex  boxShadow="0px 4px 10px rgba(0.1, 0, 0, 0.1)">
             <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/ai.png" alt="Kitten" />
-            <Flex direction="column" ml="5" alignItems="flex-start">
-              <Text fontWeight="bold" fontSize="sm">Tailored AI Training</Text>
-              <Text color="gray.500" fontSize="sm">Customized programs for AI career success.</Text>
+            <Flex direction="column" ml="5" mt="5" alignItems="flex-start">
+              <Text fontWeight="bold" fontSize="md">Tailored AI Training</Text>
+              <Text color="gray.500" fontSize="md">Customized programs for AI career success.</Text>
             </Flex>
           </Flex>
         </GridItem>
 
-        <GridItem>
-          <Flex border="2px" borderColor="grey">
-            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/2.png" alt="Kitten" />
-            <Flex direction="column" ml="5" alignItems="flex-start">
-              <Text fontWeight="bold" fontSize="sm">Tailored AI Training</Text>
-              <Text color="gray.500" fontSize="sm">Customized programs for AI career success.</Text>
+        <GridItem  mb={15} >
+          <Flex  boxShadow="0px 4px 10px rgba(0.1, 0, 0, 0.1)">
+            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/ai.png" alt="Kitten" />
+            <Flex direction="column" ml="5" mt="5" alignItems="flex-start">
+              <Text fontWeight="bold" fontSize="md">Tailored AI Training</Text>
+              <Text color="gray.500" fontSize="md">Customized programs for AI career success.</Text>
             </Flex>
           </Flex>
         </GridItem>
 
-        <GridItem>
-          <Flex border="2px" borderColor="grey">
-            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/3.png" alt="Kitten" />
-            <Flex direction="column" ml="5" alignItems="flex-start">
-              <Text fontWeight="bold" fontSize="sm">Tailored AI Training</Text>
-              <Text color="gray.500" fontSize="sm">Customized programs for AI career success.</Text>
+        <GridItem  mb={15} >
+          <Flex  boxShadow="0px 4px 10px rgba(0.1, 0, 0, 0.1)">
+            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/ai.png" alt="Kitten" />
+            <Flex direction="column" ml="5" mt="5" alignItems="flex-start">
+              <Text fontWeight="bold" fontSize="md">Tailored AI Training</Text>
+              <Text color="gray.500" fontSize="md">Customized programs for AI career success.</Text>
             </Flex>
           </Flex>
         </GridItem>
 
-        <GridItem>
-          <Flex border="2px" borderColor="grey">
-            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/4.png" alt="Kitten" />
-            <Flex direction="column" ml="5" alignItems="flex-start">
-              <Text fontWeight="bold" fontSize="sm">Tailored AI Training</Text>
-              <Text color="gray.500" fontSize="sm">Customized programs for AI career success.</Text>
+        <GridItem  mb={15} >
+          <Flex  boxShadow="0px 4px 10px rgba(0.1, 0, 0, 0.1)">
+            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/ai.png" alt="Kitten" />
+            <Flex direction="column" ml="5" mt="5" alignItems="flex-start">
+              <Text fontWeight="bold" fontSize="md">Tailored AI Training</Text>
+              <Text color="gray.500" fontSize="md">Customized programs for AI career success.</Text>
             </Flex>
           </Flex>
         </GridItem>
 
-        <GridItem>
-          <Flex border="2px" borderColor="grey">
-            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/6.png" alt="Kitten" />
-            <Flex direction="column" ml="5" alignItems="flex-start">
-              <Text fontWeight="bold" fontSize="sm">Tailored AI Training</Text>
-              <Text color="gray.500" fontSize="sm">Customized programs for AI career success.</Text>
+        <GridItem  mb={15} >
+          <Flex  boxShadow="0px 4px 10px rgba(0.1, 0, 0, 0.1)">
+            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/ai.png" alt="Kitten" />
+            <Flex direction="column" ml="5" mt="5" alignItems="flex-start">
+              <Text fontWeight="bold" fontSize="md">Tailored AI Training</Text>
+              <Text color="gray.500" fontSize="md">Customized programs for AI career success.</Text>
             </Flex>
           </Flex>
         </GridItem>
 
-        <GridItem>
-          <Flex border="2px" borderColor="grey">
-            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/5.png" alt="Kitten" />
-            <Flex direction="column" ml="5" alignItems="flex-start">
-              <Text fontWeight="bold" fontSize="sm">Tailored AI Training</Text>
-              <Text color="gray.500" fontSize="sm">Customized programs for AI career success.</Text>
+        <GridItem  mb={15} >
+          <Flex  boxShadow="0px 4px 10px rgba(0.1, 0, 0, 0.1)">
+            <Image bg="blue.500" h={90} src="https://chinarquantumai.org/images/icons/ai.png" alt="Kitten" />
+            <Flex direction="column" ml="5" mt="5" alignItems="flex-start">
+              <Text fontWeight="bold" fontSize="md">Tailored AI Training</Text>
+              <Text color="gray.500" fontSize="md">Customized programs for AI career success.</Text>
             </Flex>
           </Flex>
         </GridItem>

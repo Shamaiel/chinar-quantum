@@ -3,7 +3,7 @@ import {
   ChakraProvider,
   Box,
   Flex,
-  Link,
+
   extendTheme,
   CSSReset,
   Text,
@@ -11,6 +11,8 @@ import {
   styled,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import {  Link } from 'react-router-dom';
+
 
 const NavbarMain = () => {
   const theme = extendTheme({
@@ -49,13 +51,13 @@ const NavbarMain = () => {
           width={{ base: "full", md: "auto", lg:"50%" }}
           alignItems="center"
           flexGrow={1}
-          justifyContent="space-around"
-         
+          justifyContent="space-around" 
         >
-          <Link href="#" textDecoration="none" _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }} p={2}>
+
+          <Link to="/" textDecoration="none" _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }} p={2}>
             Home
           </Link>
-          <Link href="#" p={1}  _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }}>
+          <Link to="/alltrainings" p={1}  _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }}>
             All Trainings
           </Link>
           <Link href="#" p={2}  _hover={{ bgColor: "white", borderRadius: "7px", textDecoration: "none", color:"black" }}>
@@ -73,8 +75,8 @@ const NavbarMain = () => {
 
         <Collapse in={isOpenMenu} animateOpacity>
           <Flex
-            display={{ md: "none" }}
-            flexDirection="column"
+           
+            direction="column"
             // width="70%"
             // height="80%"
             alignItems="center"
@@ -98,8 +100,13 @@ const NavbarMain = () => {
           </Flex>
         </Collapse>
       </Flex>
+
     </ChakraProvider>
   );
 };
 
 export default NavbarMain;
+
+
+
+
